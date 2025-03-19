@@ -7,6 +7,7 @@ import { dark } from "@clerk/themes";
 import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
+import { FooterWrapper } from "@/components/FooterWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,6 +68,8 @@ export default function RootLayout({
             <ConvexClientProvider>
               <Header />
               <main>{children}</main>
+              {/* Footer Section*/}
+              <FooterWrapper />
             </ConvexClientProvider>
           </ClerkProvider>
         </ThemeProvider>

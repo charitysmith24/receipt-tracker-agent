@@ -35,6 +35,12 @@ Then:
 
 If you want to sync Clerk user data via webhooks, check out this [example repo](https://github.com/thomasballinger/convex-clerk-users-table/).
 
+## Inngest
+
+```
+npx inngest-cli@latest dev
+```
+
 ## Learn more
 
 To learn more about developing your project with Convex, check out:

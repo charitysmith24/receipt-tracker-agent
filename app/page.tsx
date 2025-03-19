@@ -1,7 +1,22 @@
+import FeaturesSection from "@/components/landing-page/FeaturesSection";
+import HeroSection from "@/components/landing-page/HeroSection";
+import InfoSection from "@/components/landing-page/InfoSection";
+import PricingSection from "@/components/landing-page/PricingSection";
+import TestimonialSection from "@/components/landing-page/TestimonialSection";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello World</h1>
+      {/* Hero Section*/}
+      <HeroSection />
+      {/* Features Section*/}
+      <FeaturesSection />
+      {/* Pricing Section*/}
+      <PricingSection />
+      {/* Info Section*/}
+      <InfoSection />
+      {/* Testimonials Section*/}
+      <TestimonialSection />
     </div>
   );
 }
