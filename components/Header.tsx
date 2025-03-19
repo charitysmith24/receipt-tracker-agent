@@ -15,7 +15,7 @@ function Header() {
     <div
       className={`sticky top-0 z-10 bg-background p-4 border-b-2 border-slate-200 dark:border-slate-800 flex flex-row justify-between items-center ${
         isHomePage
-          ? "bg-gradient-to-l from-rose-50 to-rose-800"
+          ? "bg-linear-to-l from-rose-50 to-rose-800"
           : "bg-background border-b border-rose-900"
       }`}
     >
