@@ -6,7 +6,7 @@ import TestimonialSection from "@/components/landing-page/TestimonialSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section*/}
       <HeroSection />
       {/* Features Section*/}

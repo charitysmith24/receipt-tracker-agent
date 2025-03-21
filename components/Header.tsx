@@ -26,7 +26,7 @@ function Header() {
             <h1
               className={`text-base md:text-xl font-semibold bg-linear-to-tl from-primary/95 to-teal-700 bg-clip-text text-transparent dark:from-teal-600/95 dark:to-teal-200`}
             >
-              Receipt Tracker
+              Receiptiq Agent
             </h1>
           ) : (
             <h1 className="text-base md:text-xl font-semibold text-white">

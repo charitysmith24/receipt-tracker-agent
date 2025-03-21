@@ -1,5 +1,7 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface FooterProps {
   logo: React.ReactNode;
@@ -31,8 +33,13 @@ export function Footer({
   legalLinks,
   copyright,
 }: FooterProps) {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
-    <footer className="pb-6 pt-16 lg:pb-8 lg:pt-24 bg-transparent">
+    <footer
+      className={`${!isHomePage ? "bg-transparent" : ""} pb-6 pt-16 lg:pb-8 lg:pt-24`}
+    >
       <div className="px-4 lg:px-8">
         <div className="md:flex md:items-start md:justify-between">
           <Link
@@ -41,7 +48,9 @@ export function Footer({
             aria-label={brandName}
           >
             {logo}
-            <span className="font-bold text-xl lg:text-2xl bg-linear-to-tl from-primary/95 to-teal-700 bg-clip-text text-transparent dark:from-teal-600/95 dark:to-teal-200">
+            <span
+              className={`${!isHomePage ? "text-teal-50" : "bg-linear-to-tl from-primary/95 to-teal-700 bg-clip-text text-transparent dark:from-teal-600/95 dark:to-teal-200"} font-bold text-xl lg:text-2xl`}
+            >
               {brandName}
             </span>
           </Link>
@@ -69,7 +78,7 @@ export function Footer({
                 <li key={i} className="my-1 mx-2 shrink-0">
                   <a
                     href={link.href}
-                    className="text-sm text-teal-950 dark:text-teal-50 underline-offset-4 hover:underline hover:text-teal-50"
+                    className={`${!isHomePage ? "text-teal-50" : "text-teal-950 dark:text-teal-50 hover:text-teal-50"} text-sm underline-offset-4 hover:underline`}
                   >
                     {link.label}
                   </a>
@@ -83,7 +92,7 @@ export function Footer({
                 <li key={i} className="my-1 mx-3 shrink-0">
                   <a
                     href={link.href}
-                    className="text-sm text-teal-950 dark:text-teal-50 underline-offset-4 hover:underline hover:text-teal-50"
+                    className={`${!isHomePage ? "text-teal-50" : "text-teal-950 dark:text-teal-50 hover:text-teal-50"} text-sm underline-offset-4 hover:underline`}
                   >
                     {link.label}
                   </a>
@@ -91,7 +100,9 @@ export function Footer({
               ))}
             </ul>
           </div>
-          <div className="mt-6 text-sm leading-6 text-teal-800 dark:text-teal-50 whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]">
+          <div
+            className={`${!isHomePage ? "text-teal-50 dark:text-teal-50" : "text-teal-800 dark:text-teal-50"} mt-6 text-sm leading-6 whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]`}
+          >
             <div>{copyright.text}</div>
             {copyright.license && <div>{copyright.license}</div>}
           </div>
