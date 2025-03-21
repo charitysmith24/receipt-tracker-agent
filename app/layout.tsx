@@ -52,7 +52,7 @@ export default function RootLayout({
               baseTheme: dark,
               signIn: { baseTheme: dark },
               variables: {
-                colorPrimary: "#e11d48", // Your brand's primary color
+                colorPrimary: "#00b8db", // Your brand's primary color
                 borderRadius: "8px", // Border radius for rounded corners
               },
               elements: {

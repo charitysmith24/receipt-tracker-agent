@@ -41,7 +41,7 @@ export function Footer({
             aria-label={brandName}
           >
             {logo}
-            <span className="font-bold text-xl text-white dark:text-rose-700">
+            <span className="font-bold text-xl lg:text-2xl bg-linear-to-tl from-primary/95 to-teal-700 bg-clip-text text-transparent dark:from-teal-600/95 dark:to-teal-200">
               {brandName}
             </span>
           </Link>
@@ -49,9 +49,9 @@ export function Footer({
             {socialLinks.map((link, i) => (
               <li key={i}>
                 <Button
-                  variant="secondary"
+                  variant="default"
                   size="icon"
-                  className="h-10 w-10 rounded-full border border-primary/20 hover:border-rose-600 transition-all duration-300"
+                  className="h-10 w-10 rounded-full border-1 border-primary/20 shadow-sm hover:border-teal-600 dark:hover:border-teal-200 scale-100 hover:scale-110 transition-all duration-300"
                   asChild
                 >
                   <a href={link.href} target="_blank" aria-label={link.label}>
@@ -62,14 +62,14 @@ export function Footer({
             ))}
           </ul>
         </div>
-        <div className="border-t mt-6 pt-6 md:mt-4 md:pt-8 lg:grid lg:grid-cols-10">
+        <div className="border-t border-primary/80 mt-6 pt-6 md:mt-4 md:pt-8 lg:grid lg:grid-cols-10">
           <nav className="lg:mt-0 lg:col-[4/11]">
             <ul className="list-none flex flex-wrap -my-1 -mx-2 lg:justify-end">
               {mainLinks.map((link, i) => (
                 <li key={i} className="my-1 mx-2 shrink-0">
                   <a
                     href={link.href}
-                    className="text-sm text-white/80 underline-offset-4 hover:underline hover:text-rose-900 dark:hover:text-rose-700"
+                    className="text-sm text-teal-950 dark:text-teal-50 underline-offset-4 hover:underline hover:text-teal-50"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ export function Footer({
                 <li key={i} className="my-1 mx-3 shrink-0">
                   <a
                     href={link.href}
-                    className="text-sm text-white/80 underline-offset-4 hover:underline hover:text-rose-900 dark:hover:text-rose-700"
+                    className="text-sm text-teal-950 dark:text-teal-50 underline-offset-4 hover:underline hover:text-teal-50"
                   >
                     {link.label}
                   </a>
@@ -91,7 +91,7 @@ export function Footer({
               ))}
             </ul>
           </div>
-          <div className="mt-6 text-sm leading-6 text-white/80 whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]">
+          <div className="mt-6 text-sm leading-6 text-teal-800 dark:text-teal-50 whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]">
             <div>{copyright.text}</div>
             {copyright.license && <div>{copyright.license}</div>}
           </div>

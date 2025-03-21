@@ -1,37 +1,42 @@
+"use client";
 import { Github, Twitter, Instagram, Linkedin, Shield } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { Footer } from "@/components/ui/footer";
 
 function FooterWrapper() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
-    <div className="bg-gradient-to-b from-white via-rose-300 to-rose-700 dark:from-black/90 dark:via-black/50 dark:to-black/0 px-4 py-12">
+    <div
+      className={`px-4 py-12 ${
+        isHomePage
+          ? "bg-gradient-to-l from-accent/90 via-accent/30 to-accent/10"
+          : "bg-gradient-to-tl from-accent/90 via-accent/30 to-accent/10"
+      }`}
+    >
       <div className="container w-full mx-auto">
         <Footer
-          logo={
-            <Shield className="size-10 animate-pulse text-white dark:text-rose-700" />
-          }
+          logo={<Shield className="size-10 animate-pulse text-teal-800" />}
           brandName="Receipts Tracker"
           socialLinks={[
             {
-              icon: <Twitter className="size-5 text-rose-700 bg-transparent" />,
+              icon: <Twitter className="size-5 text-white bg-transparent" />,
               href: "https://x.com/CharitySmith24",
               label: "Twitter",
             },
             {
-              icon: (
-                <Instagram className="size-5 text-rose-700 bg-transparent" />
-              ),
+              icon: <Instagram className="size-5 text-white bg-transparent" />,
               href: "https://www.instagram.com/charity.smith24/",
               label: "GitHub",
             },
             {
-              icon: (
-                <Linkedin className="size-5 text-rose-700 bg-transparent" />
-              ),
+              icon: <Linkedin className="size-5 text-white bg-transparent" />,
               href: "https://www.linkedin.com/in/charitysmith40175/",
               label: "LinkedIn",
             },
             {
-              icon: <Github className="size-5 text-rose-700 bg-transparent" />,
+              icon: <Github className="size-5 text-white bg-transparent" />,
               href: "https://github.com/charitysmith24",
               label: "GitHub",
             },
