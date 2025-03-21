@@ -6,7 +6,31 @@ import { v } from "convex/values";
 // app will continue to work.
 // The schema provides more precise TypeScript types.
 export default defineSchema({
-  numbers: defineTable({
-    value: v.number(),
+  receipts: defineTable({
+    userId: v.string(), // clerk user id
+    fileName: v.string(),
+    fileDisplayName: v.optional(v.string()),
+    fileId: v.id("_storage"),
+    fileType: v.string(),
+    fileSize: v.number(),
+    fileUploadedAt: v.number(),
+    fileStatus: v.string(), // "pending", "processed", "error"
+
+    // field for extracted data
+    merchantName: v.optional(v.string()),
+    merchantAddress: v.optional(v.string()),
+    merchantContact: v.optional(v.string()),
+    transactionDate: v.optional(v.string()),
+    transactionAmount: v.optional(v.number()),
+    currency: v.optional(v.string()),
+    receiptSummary: v.optional(v.string()),
+    receiptItems: v.array(
+      v.object({
+        name: v.string(),
+        quantity: v.number(),
+        unitPrice: v.number(),
+        totalPrice: v.number(),
+      }),
+    ),
   }),
 });

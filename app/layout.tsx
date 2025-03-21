@@ -7,6 +7,8 @@ import { dark } from "@clerk/themes";
 import Header from "@/components/Header";
 import { ThemeProvider } from "next-themes";
 import Head from "next/head";
+import { FooterWrapper } from "@/components/FooterWrapper";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,7 +53,7 @@ export default function RootLayout({
               baseTheme: dark,
               signIn: { baseTheme: dark },
               variables: {
-                colorPrimary: "#e11d48", // Your brand's primary color
+                colorPrimary: "#00b8db", // Your brand's primary color
                 borderRadius: "8px", // Border radius for rounded corners
               },
               elements: {
@@ -67,6 +69,9 @@ export default function RootLayout({
             <ConvexClientProvider>
               <Header />
               <main>{children}</main>
+              <Toaster />
+              {/* Footer Section*/}
+              <FooterWrapper />
             </ConvexClientProvider>
           </ClerkProvider>
         </ThemeProvider>
