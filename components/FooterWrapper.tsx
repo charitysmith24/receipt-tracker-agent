@@ -18,7 +18,7 @@ function FooterWrapper() {
       <div className="container w-full mx-auto">
         <Footer
           logo={<Shield className="size-10 animate-pulse text-teal-800" />}
-          brandName="Receiptiq Agent"
+          brandName="ReceiptIQ Agent"
           socialLinks={[
             {
               icon: <Twitter className="size-5 text-white bg-transparent" />,
@@ -50,7 +50,7 @@ function FooterWrapper() {
             { href: "/tos", label: "Terms" },
           ]}
           copyright={{
-            text: "© 2025 Receipt Tracker - Techvaultlabs",
+            text: "© 2025 ReceiptIQ Agent - Techvaultlabs",
             license: "All rights reserved",
           }}
         />

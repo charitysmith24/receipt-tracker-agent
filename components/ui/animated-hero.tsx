@@ -70,11 +70,11 @@ function Hero() {
             <p className="text-lg md:text-xl leading-relaxed tracking-wide text-muted-foreground dark:text-accent-foreground max-w-2xl text-center mt-2">
               Managing your personal or business finances shouldn&apos;t be a
               hassle. Say goodbye to outdated, time-consuming methods and
-              embrace the future of smart financial tracking,{" "}
-              <span className="text-2xl text-teal-500 font-bold">
-                Receiptiq
+              embrace the future of smart financial tracking with{" "}
+              <span className="text-2xl  bg-linear-to-tl from-primary/85 to-teal-600/65 bg-clip-text text-transparent dark:from-teal-600/95 dark:to-teal-200 font-bold">
+                ReceiptIQ {""}
               </span>
-              !
+              Agent!
             </p>
             <ul className="mt-4 space-y-3 max-w-2xl mx-auto text-center">
               <li className="flex items-center justify-center gap-3">
