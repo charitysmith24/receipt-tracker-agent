@@ -9,7 +9,7 @@ function InfoSection() {
         </h2>
         <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
           <div className="relative mb-6 sm:mb-0">
-            <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-teal-500/70 to-teal-500/10 p-px dark:from-teal-700 dark:to-teal-100">
+            <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl from-accent/95 to-teal-500/10 p-px dark:from-teal-700 dark:to-teal-100">
               <Image
                 src="/Info.webp"
                 className="rounded-[15px]"

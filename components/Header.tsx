@@ -52,13 +52,17 @@ function Header() {
                 Manage Plan
               </Button>
             </Link>
-            <ThemeToggle />
             <UserButton />
           </SignedIn>
-
+          <ThemeToggle />
           <SignedOut>
             <SignInButton mode="modal">
-              <Button>Login</Button>
+              <Button
+                variant="outline"
+                className="bg-transparent text-white border border-teal-700 shadow-sm shadow-white/60 hover:border-2 hover:text-white hover:shadow-lg hover:shadow-teal-300/50"
+              >
+                Login
+              </Button>
             </SignInButton>
           </SignedOut>
         </div>

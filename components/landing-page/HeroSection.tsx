@@ -10,7 +10,7 @@ function HeroSection() {
           <Hero />
         </div>
         <div className="flex justify-center">
-          <div className="relative w-full max-w-3xl rounded-lg border border-gray-200 bg-white shadow-lg overflow-hidden dark:border-teal-100 dark:bg-teal-950">
+          <div className="relative w-full max-w-3xl rounded-lg border border-gray-200 bg-white shadow-lg shadow-primary/20 dark:shadow-teal-500/20 overflow-hidden dark:border-teal-100 dark:bg-teal-950">
             <div className="p-6 md:p-8 relative">
               <PDFDropzone />
             </div>

@@ -74,7 +74,9 @@ function PricingSection() {
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-teal-700">Pricing</h2>
+          <h2 className="text-3xl font-bold text-accent/90 dark:text-teal-700">
+            Pricing
+          </h2>
           <p className="mt-2 text-5xl font-semibold tracking-tight text-muted-foreground dark:text-white sm:text-6xl">
             Pricing that grows with you
           </p>
@@ -94,7 +96,7 @@ function PricingSection() {
                 <Radio
                   key={option.value}
                   value={option}
-                  className="cursor-pointer rounded-full px-2.5 py-1 data-checked:bg-teal-700"
+                  className="cursor-pointer rounded-full px-2.5 py-1 data-checked:bg-accent/80 dark:data-checked:bg-teal-500"
                 >
                   {option.label}
                 </Radio>
@@ -113,7 +115,7 @@ function PricingSection() {
                 onClick={() => setSelectedTier(tier.id)}
                 className={classNames(
                   isSelected || isDefaultSelected
-                    ? "bg-gradient-to-b from-white to-teal-500/40 dark:from-primary/0 dark:to-primary/10 ring-4 ring-teal-600 shadow-lg scale-105 transition-transform"
+                    ? "bg-gradient-to-br from-white to-accent/50 dark:from-primary/0 dark:to-primary/10 ring-4 ring-accent/80 shadow-lg scale-105 transition-transform"
                     : "ring-1 ring-white/10",
                   "rounded-3xl p-8 xl:p-10 cursor-pointer transition-all duration-200",
                 )}
@@ -123,7 +125,7 @@ function PricingSection() {
                     id={tier.id}
                     className={classNames(
                       isSelected || isDefaultSelected
-                        ? "text-teal-800"
+                        ? "text-accent/90 dark:text-teal-800"
                         : "text-gray-400 dark:text-white/50",
                       "text-lg font-semibold",
                     )}
@@ -134,7 +136,7 @@ function PricingSection() {
                     <p
                       className={classNames(
                         isSelected || isDefaultSelected
-                          ? "bg-teal-700 text-white"
+                          ? "bg-accent/80 dark:bg-teal-700 text-white"
                           : "text-gray-400 dark:text-white/50",
                         "rounded-full px-2.5 py-1 text-xs font-semibold transition-all duration-200",
                       )}
@@ -146,7 +148,7 @@ function PricingSection() {
                 <p
                   className={classNames(
                     isSelected || isDefaultSelected
-                      ? "text-teal-950 dark:text-white"
+                      ? "text-accent/95 dark:text-white"
                       : "text-gray-400 dark:text-white/50",
                     "mt-4 prose lg:prose-sm",
                   )}
@@ -156,7 +158,7 @@ function PricingSection() {
                 <p
                   className={classNames(
                     isSelected || isDefaultSelected
-                      ? "text-teal-950 dark:text-white p-2 rounded-md"
+                      ? "text-accent dark:text-white p-2 rounded-md"
                       : "text-gray-400 dark:text-white/50",
                     "mt-6 flex items-baseline gap-x-1 transition-all duration-200",
                   )}
@@ -174,7 +176,7 @@ function PricingSection() {
                   aria-describedby={tier.id}
                   className={classNames(
                     isSelected || isDefaultSelected
-                      ? "bg-teal-700 text-white shadow-sm hover:bg-teal-600 focus-visible:outline-teal-600"
+                      ? "bg-accent/80 dark:bg-teal-700 text-white shadow-sm hover:bg-accent/60 focus-visible:outline-accent/60"
                       : "bg-primary/50 text-white hover:bg-white/20 focus-visible:outline-white",
                     "mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2",
                   )}
@@ -185,7 +187,7 @@ function PricingSection() {
                   role="list"
                   className={classNames(
                     isSelected || isDefaultSelected
-                      ? "text-teal-950 dark:text-white"
+                      ? "text-accent/95 dark:text-teal-50"
                       : "text-gray-400 dark:text-white/50",
                     "mt-8 xl:mt-10 space-y-3 text-sm",
                   )}
@@ -196,7 +198,7 @@ function PricingSection() {
                         aria-hidden="true"
                         className={classNames(
                           isSelected || isDefaultSelected
-                            ? "text-teal-700"
+                            ? "text-accent/90 dark:text-teal-700"
                             : "text-gray-400 dark:text-white/50",
                           "h-6 w-5 flex-none",
                         )}
