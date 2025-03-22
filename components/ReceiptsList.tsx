@@ -101,12 +101,12 @@ function ReceiptList() {
                 </TableCell>
                 <TableCell className="py-2">
                   {receipt.transactionAmount
-                    ? `${receipt.transactionAmount} ${receipt.currency} || ""`
+                    ? `${receipt.transactionAmount} ${receipt.currency}`
                     : "-"}
                 </TableCell>
                 <TableCell className="py-2">
                   <span
-                    className={`px-2 py-1 rounded-full text-xs ${receipt.fileStatus === "pending" ? "bg-yellow-100 text-yellow-800" : receipt.fileStatus === "success" ? "bg-green-100 text-primary/80 dark:bg-teal-100 dark:text-teal-700" : "bg-red-100 text-red-800"}`}
+                    className={`px-2 py-1 rounded-full text-xs ${receipt.fileStatus === "pending" ? "bg-yellow-100 text-yellow-800" : receipt.fileStatus === "success" ? "bg-green-100 text-primary/80 dark:bg-teal-100 dark:text-teal-700" : "bg-accent/20 text-accent dark:bg-teal-100 dark:text-teal-700"}`}
                   >
                     {receipt.fileStatus.charAt(0).toUpperCase() +
                       receipt.fileStatus.slice(1)}

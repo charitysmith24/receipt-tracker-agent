@@ -36,6 +36,7 @@ export const storeReceipt = mutation({
       transactionDate: undefined,
       transactionAmount: undefined,
       currency: undefined,
+      receiptSummary: undefined,
       receiptItems: [],
     });
     return receiptId;
@@ -151,6 +152,7 @@ export const updateReceiptWithExtractedData = mutation({
       transactionDate: v.optional(v.string()),
       transactionAmount: v.optional(v.number()),
       currency: v.optional(v.string()),
+      receiptSummary: v.optional(v.string()),
       receiptItems: v.array(
         v.object({
           name: v.string(),
@@ -178,6 +180,7 @@ export const updateReceiptWithExtractedData = mutation({
       transactionAmount: args.extractedData.transactionAmount,
       currency: args.extractedData.currency,
       receiptItems: args.extractedData.receiptItems,
+      receiptSummary: args.extractedData.receiptSummary,
       fileStatus: "processed",
     });
 
