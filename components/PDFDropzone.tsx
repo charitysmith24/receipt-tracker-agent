@@ -157,7 +157,7 @@ function PDFDropzone() {
             onDragOver={canUpload ? handleDragOver : undefined}
             onDragLeave={canUpload ? handleDragLeave : undefined}
             onDrop={canUpload ? handleDrop : undefined}
-            className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${isDraggingOver ? "border-teal-700" : "border-primary/50 dark:border-teal-500"} ${!canUpload ? "opacity-70 cursor-not-allowed" : "cursor-pointer"}`}
+            className={`border-2 border-dashed rounded-lg p-8 text-center shadow-sm md:shadow-lg shadow-teal-500/20 transition-colors ${isDraggingOver ? "border-teal-700" : "border-primary/50 dark:border-teal-500"} ${!canUpload ? "opacity-70 cursor-not-allowed" : "cursor-pointer"}`}
           >
             {isUploading ? (
               <div className="flex items-center justify-center">
@@ -176,7 +176,7 @@ function PDFDropzone() {
               </>
             ) : (
               <>
-                <CloudUpload className="size-12 mx-auto text-primary/80 dark:text-teal-300" />
+                <CloudUpload className="size-12 mx-auto text-accent/90 dark:text-teal-300" />
                 <p className="mt-2 text-sm text-primary/80 dark:text-teal-300">
                   Drag & Drop your PDF files here, or click to select files
                 </p>
@@ -188,7 +188,7 @@ function PDFDropzone() {
                 />
                 <Button
                   variant="default"
-                  className="mt-4 px-4 py-2 bg-primary/80 dark:bg-teal-500 text-white rounded hover:bg-accent disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="mt-4 px-4 py-2 bg-accent/80 dark:bg-teal-500 text-white rounded hover:bg-accent disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={!isFeatureEnabled}
                   onClick={triggerFileInput}
                 >

@@ -31,7 +31,7 @@ function Hero() {
             <Button
               variant="secondary"
               size="sm"
-              className="gap-4 text-teal-50"
+              className="gap-4 bg-teal-500 text-teal-50"
             >
               Read our launch article <MoveRight className="w-4 h-4" />
             </Button>
@@ -106,7 +106,7 @@ function Hero() {
           <div className="flex flex-row gap-3">
             <Button
               size="lg"
-              className="gap-4 hover:bg-teal-500"
+              className="gap-4 bg-accent/80 hover:border hover:border-primary/80 hover:bg-teal-500"
               variant="default"
             >
               Learn More <Brain className="w-4 h-4" />

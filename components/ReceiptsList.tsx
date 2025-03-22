@@ -82,13 +82,13 @@ function ReceiptList() {
             {receipts.map((receipt: Doc<"receipts">) => (
               <TableRow
                 key={receipt._id}
-                className="cursor-pointer hover:bg-gray-50"
+                className="cursor-pointer hover:bg-primary/10 dark:hover:bg-primary/20"
                 onClick={() => {
                   router.push(`/receipts/${receipt._id}`);
                 }}
               >
                 <TableCell className="py-2">
-                  <FileText className="size-6 text-red-500" />
+                  <FileText className="size-6 text-primary/80 dark:text-teal-200 dark:hover:text-teal-700" />
                 </TableCell>
                 <TableCell className="py-2">
                   {receipt.fileDisplayName || receipt.fileName}
@@ -106,7 +106,7 @@ function ReceiptList() {
                 </TableCell>
                 <TableCell className="py-2">
                   <span
-                    className={`px-2 py-1 rounded-full text-xs ${receipt.fileStatus === "pending" ? "bg-yellow-100 text-yellow-800" : receipt.fileStatus === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
+                    className={`px-2 py-1 rounded-full text-xs ${receipt.fileStatus === "pending" ? "bg-yellow-100 text-yellow-800" : receipt.fileStatus === "success" ? "bg-green-100 text-primary/80 dark:bg-teal-100 dark:text-teal-700" : "bg-red-100 text-red-800"}`}
                   >
                     {receipt.fileStatus.charAt(0).toUpperCase() +
                       receipt.fileStatus.slice(1)}
