@@ -84,7 +84,7 @@ function ReceiptList() {
                 key={receipt._id}
                 className="cursor-pointer hover:bg-primary/10 dark:hover:bg-primary/20"
                 onClick={() => {
-                  router.push(`/receipts/${receipt._id}`);
+                  router.push(`/receipt/${receipt._id}`);
                 }}
               >
                 <TableCell className="py-2">
