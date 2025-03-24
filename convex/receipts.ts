@@ -80,7 +80,7 @@ export const getReceiptById = query({
 });
 
 // Generate download URL
-export const generateDownloadUrl = query({
+export const getReceiptDownloadUrl = query({
   args: {
     fileId: v.id("_storage"),
   },
@@ -125,10 +125,6 @@ export const deleteReceipt = mutation({
     const receipt = await ctx.db.get(args.id);
     if (!receipt) {
       throw new Error("Receipt not found");
-    }
-    const identity = await ctx.auth.getUserIdentity();
-    if (!identity || identity.subject !== receipt.userId) {
-      throw new Error("Not Unauthorized to Access Receipt");
     }
 
     // Delete receipt file from storage

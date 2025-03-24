@@ -45,8 +45,8 @@ function ReceiptList() {
 
   if (receipts.length === 0) {
     return (
-      <div className="w-full p-8 text-center border border-teal-200 rounded-lg shadow-md bg-teal-50">
-        <p className="text-muted-foreground">
+      <div className="w-full p-8 text-center border rounded-lg shadow-md shadow-primary/40 bg-primary/10 border-accent/80 dark:bg-teal-900 dark:border-accent/20">
+        <p className="text-muted-foreground dark:text-teal-50">
           No receipts have been uploaded yet.
         </p>
       </div>

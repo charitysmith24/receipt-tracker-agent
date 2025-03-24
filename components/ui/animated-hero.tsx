@@ -31,7 +31,7 @@ function Hero() {
             <Button
               variant="secondary"
               size="sm"
-              className="gap-4 bg-teal-500 text-teal-50"
+              className="gap-4 bg-primary text-teal-50"
             >
               Read our launch article <MoveRight className="w-4 h-4" />
             </Button>
@@ -46,7 +46,7 @@ function Hero() {
                 {titles.map((title, index) => (
                   <motion.span
                     key={index}
-                    className="absolute font-semibold text-teal-500"
+                    className="absolute font-semibold text-primary dark:text-teal-500"
                     initial={{ opacity: 0, y: "-100" }}
                     transition={{ type: "spring", stiffness: 50 }}
                     animate={
@@ -106,14 +106,14 @@ function Hero() {
           <div className="flex flex-row gap-3">
             <Button
               size="lg"
-              className="gap-4 bg-accent/80 hover:border hover:border-primary/80 hover:bg-teal-500"
+              className="gap-4 bg-primary/80 dark:bg-teal-600 hover:border hover:border-teal-800 hover:bg-primary/70 shadow-sm shadow-primary/60 dark:shadow-teal-200"
               variant="default"
             >
               Learn More <Brain className="w-4 h-4" />
             </Button>
             <Button
               size="lg"
-              className="gap-4 hover:bg-teal-500 hover:text-white hover:border-teal-800 dark:border-teal-50"
+              className="gap-4 hover:bg-primary/70 hover:text-white hover:border-teal-800 dark:border-teal-50 shadow-sm shadow-primary/60 dark:shadow-teal-200"
               variant="outline"
             >
               Get Started <MoveRight className="w-4 h-4" />

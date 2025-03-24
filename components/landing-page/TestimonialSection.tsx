@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const featuredTestimonial = {
-  body: "ClipSage's AI agent transformed my videos! The detailed insights and automatic transcriptions helped me optimize my content and grow my channel. Highly recommend it!",
+  body: "ReceiptIQ's AI agents have revolutionized how we handle expenses at our startup. What used to take our team hours now happens instantly. The agents even catch patterns in our spending that helped us save thousands last quarter!",
   author: {
     name: "Brenna Goyette",
     handle: "brennagoyette",
@@ -16,7 +16,7 @@ const testimonials = [
   [
     [
       {
-        body: "As a YouTube creator on the free tier, the transcription feature is a lifesaver! Now I can repurpose my videos into blogs effortlessly.",
+        body: "The free tier is perfect for my small business. I just snap photos of receipts, and the AI automatically categorizes everything. No more messy spreadsheets!",
         author: {
           name: "Leslie Alexander",
           handle: "lesliealexander",
@@ -25,7 +25,7 @@ const testimonials = [
         },
       },
       {
-        body: "The script generation and title suggestions are amazing! I love how it saves me time and boosts my video performance.",
+        body: "The expense forecasting and budget recommendations from the AI are spot-on. It's like having a CFO in my pocket that works 24/7.",
         author: {
           name: "Charity Smith",
           handle: "charitysmith",
@@ -35,7 +35,7 @@ const testimonials = [
     ],
     [
       {
-        body: "I’m on the Starter plan, and the 50 tokens per month are just right for my weekly uploads. The thumbnail creator is spot on!",
+        body: "The Starter plan gives me all the features I need. The AI agents handle everything from receipt scanning to expense reports, and the real-time spending alerts are invaluable.",
         author: {
           name: "Lindsay Walton",
           handle: "lindsaywalton",
@@ -48,7 +48,7 @@ const testimonials = [
   [
     [
       {
-        body: "I went for the Creator tier, and it’s worth every penny! The 300 tokens give me all the freedom to experiment with new video ideas.",
+        body: "The Professional tier is perfect for our growing team. Multiple AI agents work together to track expenses, manage approvals, and generate detailed financial reports automatically.",
         author: {
           name: "Tom Cook",
           handle: "tomcook",
@@ -59,7 +59,7 @@ const testimonials = [
     ],
     [
       {
-        body: "The insights and analytics provided by this AI agent have helped me target the right audience and boost my engagement rates.",
+        body: "The AI's ability to analyze spending patterns and suggest cost-saving opportunities has been game-changing for our business. It paid for itself in the first month!",
         author: {
           name: "Leonard Krasner",
           handle: "leonardkrasner",
@@ -68,7 +68,7 @@ const testimonials = [
         },
       },
       {
-        body: "Being on the Starter plan, I appreciate how easy it is to create video scripts and get actionable recommendations. It’s like having a personal video coach!",
+        body: "I love how I can just chat with the AI about my expenses. Whether I need to find a specific receipt or understand my monthly trends, it's like talking to a knowledgeable financial assistant.",
         author: {
           name: "Douglas Day",
           handle: "DouglasDay",

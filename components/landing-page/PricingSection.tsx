@@ -40,7 +40,8 @@ const tiers: Tier[] = [
     id: "tier-starter",
     href: "/manage-plan",
     price: { monthly: "$5.99", annually: "$59.00" },
-    description: "A taste of expensing goodness!",
+    description:
+      "Perfect for individuals looking to streamline their personal expense tracking with AI-powered receipt management.",
     features: ["50 Scans", "Advanced Data Extraction", "30-Day History"],
     mostPopular: true,
   },
@@ -49,7 +50,8 @@ const tiers: Tier[] = [
     id: "tier-creator",
     href: "/manage-plan",
     price: { monthly: "$9.99", annually: "$99.00" },
-    description: "Pro features for the power user!",
+    description:
+      "Complete expense management solution with advanced AI analytics, custom reporting, and unlimited storage for growing businesses.",
     features: [
       "300 Scans",
       "Advanced Data Extraction",
@@ -82,8 +84,9 @@ function PricingSection() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-gray-600 dark:text-gray-300 sm:text-xl">
-          Choose an affordable plan that’s packed with the best features for
-          engaging your audience, creating customer loyalty, and driving sales.
+          Select a plan that fits your management needs, featuring AI-powered
+          expense tracking, intelligent receipt processing, and automated
+          financial insights to help your business thrive.
         </p>
         <div className="mt-16 flex justify-center">
           <fieldset aria-label="Payment frequency">
