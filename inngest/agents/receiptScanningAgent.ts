@@ -1,5 +1,4 @@
-import { createAgent, createTool, openai } from "@inngest/agent-kit";
-import { anthropic } from "inngest";
+import { anthropic, createAgent, createTool, openai } from "@inngest/agent-kit";
 import { z } from "zod";
 
 const parsePdfTool = createTool({
